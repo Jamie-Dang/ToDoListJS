@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample - Todo</title>
+    <!-- Chèn thuộc tính CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="myDIV" class="header">
+        <h2>To do Calendar</h2>
+        <!-- Tạo ô để nhập dữ liệu từ người dùng -->
+        <input
+          type="text"
+          id="myInput"
+          placeholder="Today, enter your task..."
+        />
+        <!-- Hàm newElement() được thực thi mỗi khi người dùng nhấn nút add -->
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+
+      <ul id="myUL">
+        <li>Task - 0</li>
+        <li class="checked">Task - 1</li>
+        <li>Task - 2</li>
+        <li>Task - 3</li>
+      </ul>
+    </div>
+  </body>
+  <!-- Chèn thuộc tính JavaScript -->
+  <script src="script.js"></script>
+</html>
